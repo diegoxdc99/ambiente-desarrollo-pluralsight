@@ -2,7 +2,7 @@ import path from 'path';
 
 export default {
   debug: true,
-  devtool: 'inline-source-map',  //ver pagina de webpack para mas tipos
+  devtool: 'inline-source-map',
   noInfo: false,
   entry: [
     path.resolve(__dirname, 'src/index')
@@ -12,9 +12,6 @@ export default {
     path: path.resolve(__dirname, 'src'),
     publicPath: '/',
     filename: 'bundle.js'
-  },
-  devServer: {
-      contentBase: path.resolve(__dirname, 'src')
   },
   plugins: [],
   module: {
