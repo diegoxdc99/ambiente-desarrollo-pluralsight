@@ -13,7 +13,7 @@ describe('index.html', () => {
     const index = fs.readFileSync('./src/index.html', "utf-8");
     jsdom.env(index, function(err, window){  //se puede pasar un array de archivos de javascript para cargar en el ambiente del JSDOM
       const h1 = window.document.getElementsByTagName('h1')[0];
-      expect(h1.innerHTML).to.equal("Hello world!");
+      expect(h1.innerHTML).to.equal("Users");
       done();
       window.close();
     });
