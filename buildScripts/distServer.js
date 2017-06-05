@@ -15,9 +15,26 @@ app.get('/', function(req, res){
   res.sendFile(path.join(__dirname, '../dist/index.html'));
 });
 
-app.get('users', function(req, res){
+app.get('/users', function(req, res){
   res.json([
-    {"id": 1,"firstName": "Bob","lastName": "Smith","email":"bob@gmail.com"}
+    {
+      "id": 2875557,
+      "firstName": "Katlyn",
+      "lastName": "Hahn",
+      "email": "Cathy_Baumbach20@gmail.com"
+    },
+    {
+      "id": 78101590,
+      "firstName": "Stefanie",
+      "lastName": "Mann",
+      "email": "Yoshiko36@yahoo.com"
+    },
+    {
+      "id": 31105157,
+      "firstName": "Alejandra",
+      "lastName": "Mohr",
+      "email": "Earlene57@gmail.com"
+    }
   ]);
 });
 
